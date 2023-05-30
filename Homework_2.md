@@ -26,8 +26,7 @@
 
 `sudo nano /var/lib/lxc/test123/config` - открываем;
 
-\```
-# Container specific configuration
+\```# Container specific configuration
  
 lxc.cgroup2.memory.max = 256M
  
