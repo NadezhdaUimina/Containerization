@@ -14,7 +14,7 @@
 
 `sudo lxc-attach -n teat123` - войдем в него;
 
-`free -m` - проверяем пямаять
+`free -m` - проверяем пямаять;
 
 `exit` - выходим;
 
@@ -26,16 +26,36 @@
 
 `sudo nano /var/lib/lxc/test123/config` - открываем;
 
-`# Container specific configuration`
-`lxc.cgroup2.memory.max = 256M`
- 
-lxc.start.auto  =  1
-\```
+прописываем параметры:
 
+  # Container specific configuration
+
+  lxc.cgroup2.memory.max = 256M
+
+`sudo lxc-start -n test123` - запускаем;
+
+`sudo lxc-attach -n teat123` - войдем в него;
+
+`free -m` - проверяем пямаять;
+
+`exit` - выходим;
+
+`lxc-stop -n test123` - закрываем;
+
+![скрин выполненой работы](Screen/Homework2_2.png)
 
 **Задание по желанию ..**
 
 3) "добавить автозапуск контейнеру, перезагрузить ОС и убедиться, что контейнер действительно запустился самостоятельно
+
+`sudo nano /var/lib/lxc/test123/config` - открываем;
+
+прописываем параметры:
+
+`# Container specific configuration`
+ 
+`lxc.start.auto  =  1`
+
 
 4) "при создании указать файл, куда записывать логи
 
