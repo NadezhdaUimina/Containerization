@@ -30,7 +30,7 @@
 
     # Container specific configuration
 
-   lxc.cgroup2.memory.max = 256M
+    lxc.cgroup2.memory.max = 256M
 
 `sudo lxc-start -n test123` - запускаем;
 
