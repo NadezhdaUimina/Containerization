@@ -8,17 +8,17 @@
 
 1) запустить контейнер с ubuntu, используя механизм LXC
 
-`sudo lxc-create -n test123 -t ubuntu - создаем контейнер;
+`sudo lxc-create -n test123 -t ubuntu` - создаем контейнер;
 
-sudo lxc-start -n test123 - запускаем;
+`sudo lxc-start -n test123` - запускаем;
 
-sudo lxc-attach -n teat123 - войдем в него;
+`sudo lxc-attach -n teat123` - войдем в него;
 
-free -m - проверяем пямаять
+`free -m` - проверяем пямаять
 
-exit - выходим;
+`exit` - выходим;
 
-lxc-stop -n test123 - закрываем;
+`lxc-stop -n test123` - закрываем;
 
 ![скрин выполненой работы](Screen/Homework2_1.png)
 
@@ -27,7 +27,9 @@ lxc-stop -n test123 - закрываем;
 `sudo nano /var/lib/lxc/test123/config` - открываем;
 
  `# Container specific configuration
+ 
  lxc.cgroup2.memory.max = 256M
+ 
  lxc.start.auto  =  1`
 
 **Задание по желанию ..**
