@@ -52,9 +52,9 @@
 
 прописываем параметры:
 
-`# Container specific configuration`
+    # Container specific configuration
  
-`lxc.start.auto  =  1`
+    lxc.start.auto  =  1
 
 
 4) "при создании указать файл, куда записывать логи
