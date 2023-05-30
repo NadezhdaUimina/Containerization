@@ -26,11 +26,11 @@
 
 `sudo nano /var/lib/lxc/test123/config` - открываем;
 
- `# Container specific configuration
+`# Container specific configuration`
  
- lxc.cgroup2.memory.max = 256M
+`lxc.cgroup2.memory.max = 256M`
  
- lxc.start.auto  =  1`
+`lxc.start.auto  =  1`
 
 **Задание по желанию ..**
 
