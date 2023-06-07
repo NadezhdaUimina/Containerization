@@ -28,8 +28,7 @@
     
     CREATE TABLE test (id INTEGER PRIMARY KEY AUTO_INCREMENT,name TEXT NOT NULL,age TINYINT NOT NULL);
     
-    INSERT INTO test (name, age)VALUES('Sergey',33),('Anna',32),
-('Ivan',30);
+    INSERT INTO test (name, age)VALUES('Sergey',33),('Anna',32),('Ivan',30);
 
     SELECT * FROM test;
 
