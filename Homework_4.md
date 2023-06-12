@@ -22,6 +22,6 @@
 
 `docker build -t homework .` - создаем образ;
 
-`docker run homework` - запуск;
+`docker run homework` - запуск контейнера;
 
 ![скрин выполненой работы](Screen/Homework4_3.png)
