@@ -306,20 +306,20 @@ VOLUME - Создание точки монтирования
 
 ● Дополнительные возможности
 
-Пример 
+Пример YAML файла:
 
                 version: ‘3.9’
                 services:
                 db:
-                image: mariadb:10.10.2
-                restart: always
-                environment:
-                MYSQL_ROOT_PASSWORD: 12345
+                        image: mariadb:10.10.2
+                        restart: always
+                        environment:
+                                MYSQL_ROOT_PASSWORD: 12345
                 adminer:
-                image: adminer:4.8.1
-                restart: always
-                ports:
-                - 6080:8080
+                        image: adminer:4.8.1
+                        restart: always
+                        ports:
+                                - 6080:8080
 **Основные команды ДК**
 
 ● docker-compose build - команда позволяет собрать сервисы, описанные в конфигурационных файлах
